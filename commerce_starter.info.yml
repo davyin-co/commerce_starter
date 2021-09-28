@@ -60,6 +60,7 @@ dependencies:
   # Contrib
   - admin_toolbar:admin_toolbar
   - swiftmailer:swiftmailer
+  - dyniva_backoffice:dyniva_backoffice
 themes:
   - bartik
   - seven
