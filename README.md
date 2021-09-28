@@ -3,4 +3,4 @@
 Enables the Commerce modules.
 Based on Drupal's Standard profile.
 
-Used by [drupalcommerce/project-base](https://github.com/drupalcommerce/project-base).
+Used by [davyin-co/commerce_starter-project](https://github.com/davyin-co/commerce_starter-project).
