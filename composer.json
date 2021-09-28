@@ -1,0 +1,134 @@
+{
+    "name": "davyin/commerce_starter",
+    "type": "drupal-profile",
+    "description": "Commerce 2.x installation profile",
+    "homepage": "https://github.com/davyin-co/commerce_starter",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupalcommerce/commerce_base": "9.x-dev",
+        "drupal/commerce": "^2.26",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/swiftmailer": "^2.0",
+        "ext-curl": "*",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/advancedqueue": "^1.0@RC",
+        "drupal/change_pwd_page": "1.x-dev",
+        "drupal/chosen": "^2.9",
+        "drupal/commerce_add_to_cart_link": "^1.1",
+        "drupal/commerce_shipping": "^2.0",
+        "drupal/commerce_variation_cart_form": "^1.1",
+        "drupal/config_ignore": "^2.2",
+        "drupal/console": "^1.0.2",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/devel": "^4.1",
+        "drupal/devel_php": "^1.1",
+        "drupal/double_field": "^3.4",
+        "drupal/faq": "^1.0",
+        "drupal/field_group": "^3.0",
+        "drupal/flood_control": "^2.1",
+        "drupal/hide_submit_d8": "^1.0",
+        "drupal/image_effects": "^3.0",
+        "drupal/login_redirect_per_role": "^1.6",
+        "drupal/mail_login": "^2.4",
+        "drupal/masquerade": "^2.0@beta",
+        "drupal/menu_token": "^1.0",
+        "drupal/module_filter": "^3.1",
+        "drupal/multiselect": "^1.0",
+        "drupal/page_load_progress": "^1.4",
+        "drupal/password_policy": "^3.0",
+        "drupal/queue_ui": "^2.0",
+        "drupal/reroute_email": "^1.1",
+        "drupal/restui": "^1.17",
+        "drupal/search_api": "^1.0",
+        "drupal/select2": "^1.7",
+        "drupal/session_limit": "^1.0",
+        "drupal/taxonomy_entity_index": "^1.1",
+        "drupal/token": "^1.0",
+        "drupal/ultimate_cron": "2.x-dev",
+        "drupal/username_enumeration_prevention": "^1.0",
+        "drupal/views_bulk_operations": "^3.6",
+        "drupal/views_data_export": "^1.0",
+        "drush/drush": "^10.2",
+        "npm-asset/select2": "^4.0",
+        "oomphinc/composer-installers-extender": "^1.1 || ^2.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3",
+        "davyin/dyniva_admin": "1.x-dev",
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "davyin/dyniva_backoffice": "1.x-dev"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/drupalcommerce/commerce_base"
+        }
+    ],
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "drupal/core": {
+                "Use email verification when changing user email addresses": "https://www.drupal.org/files/issues/2019-12-03/85494-287-8.8.x.patch"
+            },
+            "drupal/change_pwd_page": {
+                "Drush 8 urli link doesn't work properly": "https://www.drupal.org/files/issues/2020-12-03/3186331-restore-uli-link.patch"
+            },
+            "drupal/commerce": {
+                "Prevent double-submit of checkout pages": "https://www.drupal.org/files/issues/commerce_prevent_double_submit-2866638-4.patch"
+            },
+            "drupal/session_limit": {
+                "Undefined property error in onSessionCollisionDropOldest": "https://www.drupal.org/files/issues/2906310-2.session_limit.Wrong-property-name-in-onSessionCollisionDropOldest.patch"
+            }
+        },
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            }
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module",
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile",
+                "type:drupal-custom-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    }
+}
