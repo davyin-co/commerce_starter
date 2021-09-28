@@ -59,7 +59,21 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "scripts": {},
+    "scripts": {
+        "sync": [
+            "rm -r -f ./docroot/profiles/contrib/commerce_starter",
+            "mkdir -p ./docroot/profiles/contrib/commerce_starter",
+            "cp commerce_starter.* docroot/profiles/contrib/commerce_starter/",
+            "cp -r config docroot/profiles/contrib/commerce_starter/"
+        ],
+        "quick-start": [
+            "@composer sync",
+            "chmod 777 docroot/sites/default",
+            "rm -rf docroot/sites/default/settings.php docroot/sites/default/files",
+            "composer install",
+            "php docroot/core/scripts/drupal quick-start commerce_starter --no-interaction"
+        ]
+    },
     "repositories": [
         {
             "type": "composer",

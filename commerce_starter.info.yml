@@ -18,6 +18,7 @@ dependencies:
   - drupal:node
   - drupal:options
   - drupal:path
+  - drupal:help
   - drupal:locale
   - drupal:language
   - drupal:content_translation
