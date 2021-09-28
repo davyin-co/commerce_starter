@@ -31,7 +31,6 @@
         "drupal/login_redirect_per_role": "^1.6",
         "drupal/mail_login": "^2.4",
         "drupal/masquerade": "^2.0@beta",
-        "drupal/menu_token": "^1.0",
         "drupal/module_filter": "^3.1",
         "drupal/multiselect": "^1.0",
         "drupal/page_load_progress": "^1.4",
@@ -54,7 +53,8 @@
         "webmozart/path-util": "^2.3",
         "davyin/dyniva_admin": "1.x-dev",
         "zaporylie/composer-drupal-optimizations": "^1.0",
-        "davyin/dyniva_backoffice": "1.x-dev"
+        "davyin/dyniva_backoffice": "1.x-dev",
+        "drupal/core": "^9.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
