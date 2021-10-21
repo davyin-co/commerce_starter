@@ -10,7 +10,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "davyin/dyniva_admin": "1.x-dev",
         "davyin/dyniva_backoffice": "1.x-dev",
-        "davyin/dyniva_media": "1.x-dev",
+        "davyin/dyniva_media": "2.x-dev",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advancedqueue": "^1.0@RC",
         "drupal/change_pwd_page": "1.x-dev",
