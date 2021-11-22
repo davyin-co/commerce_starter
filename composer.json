@@ -39,7 +39,7 @@
         "drupal/page_load_progress": "^1.4",
         "drupal/password_policy": "^3.0",
         "drupal/queue_ui": "^2.0",
-        "drupal/reroute_email": "^1.1",
+        "drupal/reroute_email": "^2.0",
         "drupal/restui": "^1.17",
         "drupal/search_api": "^1.0",
         "drupal/select2": "^1.7",
