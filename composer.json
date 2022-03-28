@@ -114,9 +114,6 @@
             },
             "drupal/core": {
                 "Use email verification when changing user email addresses": "https://www.drupal.org/files/issues/2019-12-03/85494-287-8.8.x.patch"
-            },
-            "drupal/session_limit": {
-                "Undefined property error in onSessionCollisionDropOldest": "https://www.drupal.org/files/issues/2906310-2.session_limit.Wrong-property-name-in-onSessionCollisionDropOldest.patch"
             }
         }
     },
