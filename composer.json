@@ -44,7 +44,7 @@
         "drupal/restui": "^1.17",
         "drupal/search_api": "^1.0",
         "drupal/select2": "^1.7",
-        "drupal/session_limit": "^1.0",
+        "drupal/session_limit": "^2.0@beta",
         "drupal/swiftmailer": "^2.0",
         "drupal/taxonomy_entity_index": "^1.1",
         "drupal/token": "^1.0",
