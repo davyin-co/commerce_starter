@@ -113,7 +113,7 @@
                 "Prevent double-submit of checkout pages": "https://www.drupal.org/files/issues/commerce_prevent_double_submit-2866638-4.patch"
             },
             "drupal/core": {
-                "Use email verification when changing user email addresses": "https://www.drupal.org/files/issues/2019-12-03/85494-287-8.8.x.patch"
+                "Use email verification when changing user email addresses": "https://www.drupal.org/files/issues/2022-07-13/85494-395.patch"
             }
         }
     },
